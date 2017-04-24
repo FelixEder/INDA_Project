@@ -19,3 +19,5 @@ For the classes that handle print outs (and then later graphics) we wrote the co
 **How to play**
 
 A .jar file has been created in the bin-folder. Enter the command "java -jar GunslingerDuel.jar" when in the bin-folder and the game should start.
+
+### This repo is a copy from the actual repo which was used during the course and therefor the all the files where added in one commit
