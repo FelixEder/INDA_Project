@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1920.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/8.0.76-ea" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+    <Button fx:id="p1ShootButton" layoutX="71.0" layoutY="1180.0" mnemonicParsing="false" onAction="#player1Shoot" prefHeight="108.0" prefWidth="340.0" text="Shoot">
+         <font>
+            <Font size="46.0" />
+         </font></Button>
+      <Button fx:id="p1ShieldButton" layoutX="71.0" layoutY="1441.0" mnemonicParsing="false" onAction="#player1Shield" prefHeight="108.0" prefWidth="340.0" text="Shield">
+         <font>
+            <Font size="46.0" />
+         </font></Button>
+      <Button fx:id="p1ReloadButton" layoutX="71.0" layoutY="1702.0" mnemonicParsing="false" onAction="#player1Reload" prefHeight="108.0" prefWidth="340.0" text="Reload">
+         <font>
+            <Font size="46.0" />
+         </font></Button>
+      <Button fx:id="p2ShootButton" layoutX="670.0" layoutY="1180.0" mnemonicParsing="false" onAction="#player2Shoot" prefHeight="108.0" prefWidth="340.0" text="Shoot">
+         <font>
+            <Font size="46.0" />
+         </font></Button>
+      <Button fx:id="p2ShieldButton" layoutX="670.0" layoutY="1441.0" mnemonicParsing="false" onAction="#player2Shield" prefHeight="108.0" prefWidth="340.0" text="Shield">
+         <font>
+            <Font size="46.0" />
+         </font></Button>
+      <Button fx:id="p2ReloadButton" layoutX="670.0" layoutY="1702.0" mnemonicParsing="false" onAction="#player2Reload" prefHeight="108.0" prefWidth="340.0" text="Reload">
+         <font>
+            <Font size="46.0" />
+         </font></Button>
+      <ImageView depthTest="ENABLE" fitHeight="819.0" fitWidth="1296.0" layoutX="-168.0" layoutY="-8.0">
+         <image>
+            <Image url="@../images/Rango-Wallpaper-4.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="player1Char" fitHeight="314.0" fitWidth="360.0" layoutX="70.0" layoutY="384.0" />
+      <ImageView fx:id="player2Char" fitHeight="314.0" fitWidth="360.0" layoutX="662.0" layoutY="354.0" nodeOrientation="RIGHT_TO_LEFT">
+         <rotationAxis>
+            <Point3D x="1.0" z="1.0" />
+         </rotationAxis>
+      </ImageView>
+      <Label fx:id="printOut" layoutX="32.0" layoutY="840.0" prefHeight="206.0" prefWidth="989.0" wrapText="true">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+      <Label fx:id="player1Ammo" layoutX="231.0" layoutY="1010.0" prefHeight="156.0" prefWidth="137.0">
+         <font>
+            <Font size="56.0" />
+         </font>
+      </Label>
+      <Label fx:id="player2Ammo" layoutX="796.0" layoutY="1010.0" prefHeight="156.0" prefWidth="137.0">
+         <font>
+            <Font size="56.0" />
+         </font>
+      </Label>
+      <Label fx:id="player1Name" layoutX="36.0" layoutY="66.0" prefHeight="174.0" prefWidth="449.0">
+         <font>
+            <Font name="Serif Regular" size="41.0" />
+         </font>
+      </Label>
+      <Label fx:id="player2Name" layoutX="670.0" layoutY="66.0" prefHeight="174.0" prefWidth="449.0">
+         <font>
+            <Font name="Serif Regular" size="41.0" />
+         </font>
+      </Label>
+      <Label fx:id="roundCount" layoutX="361.0" layoutY="72.0" prefHeight="87.0" prefWidth="318.0" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="46.0" />
+         </font>
+      </Label>
+      <ProgressBar fx:id="progressBar" layoutX="359.0" layoutY="727.0" prefHeight="51.0" prefWidth="326.0" progress="1.0" />
+      <Button fx:id="restartButton" layoutX="364.0" layoutY="1302.0" mnemonicParsing="false" onAction="#restartDuel" prefHeight="108.0" prefWidth="340.0" text="Restart" visible="false">
+         <font>
+            <Font size="46.0" />
+         </font>
+      </Button>
+      <Button fx:id="menuButton" layoutX="374.0" layoutY="1557.0" mnemonicParsing="false" onAction="#backClick" prefHeight="108.0" prefWidth="340.0" text="Main Menu" visible="false">
+         <font>
+            <Font size="46.0" />
+         </font>
+      </Button>
+      <ProgressBar fx:id="p2HealthBar" layoutX="796.0" layoutY="68.0" prefWidth="200.0" progress="1.0" style="-fx-accent: red;" />
+      <ProgressBar fx:id="p1HealthBar" layoutX="89.0" layoutY="68.0" prefWidth="200.0" progress="1.0" style="-fx-accent: red;" />
+      <Label fx:id="player1Ammo1" layoutX="17.0" layoutY="1008.0" prefHeight="156.0" prefWidth="203.0" text="Ammo:">
+         <font>
+            <Font size="56.0" />
+         </font>
+      </Label>
+      <Label fx:id="player1Ammo11" layoutX="583.0" layoutY="1008.0" prefHeight="156.0" prefWidth="203.0" text="Ammo:">
+         <font>
+            <Font size="56.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>
